@@ -26,8 +26,7 @@ Modulo result: <label id="p_modres"></label>
 <script>
 
 function myFunction() {
-    var d = new Date();
-    var n = 1 + d.getMilliseconds() % 6;
+    var n = 1 + (Date.now() % 6);
     document.getElementById("demo").innerHTML += n;
     if ((document.getElementById("demo").innerText.length + 1) % 6 == 0)
     {
